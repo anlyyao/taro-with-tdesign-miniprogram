@@ -1,15 +1,18 @@
-import { View, Text } from '@tarojs/components'
-import { useLoad } from '@tarojs/taro'
-import './index.less'
+import { View, Text } from '@tarojs/components';
+import { useLoad } from '@tarojs/taro';
+import './index.less';
 
-export default function Index () {
+export default function Index() {
   useLoad(() => {
-    console.log('Page loaded.')
-  })
+    console.log('Page loaded.');
+  });
 
   return (
-    <View className='index'>
+    <View className="index">
       <Text>Hello world!</Text>
+      <t-button theme="primary" block>
+        显示日历
+      </t-button>
     </View>
-  )
+  );
 }
